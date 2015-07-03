@@ -1,0 +1,73 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<title>Donut Sales Algorithm</title>
+		</head>
+		<body style="font-family: Courier">
+			Welcome to the PROPRIETARY and TOP-POT-SECRET DONUT SALES ALGORITHM.<br>
+			Please check the stores you wish THE ALGORITHM to model.<br>
+			<input id="dtbox" type="checkbox" value="dt">Downtown<br>
+			<input id="chbox" type="checkbox" value="ch">Capitol Hill<br>
+			<input id="slbox" type="checkbox" value="sl">South Lake Union<br>
+			<input id="wwbox" type="checkbox" value="ww">Wedgewood<br>
+			<input id="blbox" type="checkbox" value="bl">Ballard<br>
+			<input id="nebox" type="checkbox" value="ne">Northeast Seattle<br><br>
+			Please use the dropdowns to tell THE ALGORITHM which hours you are planning for.<br>
+			Day of the week:
+			<select id="dayOfWeek">
+				<option id="mon" value="weekday">Monday</option>
+				<option id="tue" value="weekday">Tuesday</option>
+				<option id="wed" value="weekday">Wednesday</option>
+				<option id="thu" value="weekday">Thursday</option>
+				<option id="fri" value="weekday">Friday</option>
+				<option id="sat" value="weekend">Saturday</option>
+				<option id="sun" value="weekend">Sunday</option>
+			</select>
+			Start time:
+			<select id="startTime">
+				<!--Note to self: these values look like strings, but we'll want to use them
+				as numbers.  This may cause problems later.-->
+				<option id="start7" value="7">7:00AM</option>
+				<option id="start8" value="8">8:00AM</option>
+				<option id="start9" value="9">9:00AM</option>
+				<option id="start10" value="10">10:00AM</option>
+				<option id="start11" value="11">11:00AM</option>
+				<option id="start12" value="12">12:00PM</option>
+				<option id="start13" value="13">1:00PM</option>
+				<option id="start14" value="14">2:00PM</option>
+				<option id="start15" value="15">3:00PM</option>
+				<option id="start16" value="16">4:00PM</option>
+				<option id="start17" value="17">5:00PM</option>
+			</select>
+			End time:
+			<select id="endTime">
+				<!--Note to self: these values look like strings, but we'll want to use them
+				as numbers.  This may cause problems later.-->
+				<option id="end8" value="8">8:00AM</option>
+				<option id="end9" value="9">9:00AM</option>
+				<option id="end10" value="10">10:00AM</option>
+				<option id="end11" value="11">11:00AM</option>
+				<option id="end12" value="12">12:00PM</option>
+				<option id="end13" value="13">1:00PM</option>
+				<option id="end14" value="14">2:00PM</option>
+				<option id="end15" value="15">3:00PM</option>
+				<option id="end16" value="16">4:00PM</option>
+				<option id="end17" value="17">5:00PM</option>
+				<option id="end18" value="18">6:00PM</option>
+			</select><br><br>
+			Would you like THE ALGORITHM to compliment you?  If so, enter the compliment you wish to receive from THE ALGORITHM below.<br>
+			<input id="compliment" type="text" placeholder="You are adorable!"><br><br>
+			<button id="button">Initiate THE ALGORITHM.</button>
+
+			<script src="TopPotUI.js"></script>
+
+			<p id="confirm"><em>(THE ALGORITHM is dormant but ready.)</em></p><br><br>
+			<p id="overview"></p><br>
+			<p id="dtreport"></p>
+			<p id="chreport"></p>
+			<p id="slreport"></p>
+			<p id="wwreport"></p>
+			<p id="blreport"></p>
+			<p id="nereport"></p>
+	</body>
+</html>

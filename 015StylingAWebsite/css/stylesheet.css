@@ -1,0 +1,113 @@
+header {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+h1 {
+	font-family: Yellowtail;
+	display: inline;
+	font-size: 30px;
+}
+h2 {
+	font-family: Abel;
+	font-size: 36px;
+}
+h3 {
+	font-family: Droid serif;
+	font-size: 20;
+	margin-bottom: 5px;
+}
+li {
+	margin-top: 15px;
+}
+footer {
+	margin-bottom: 30px;
+}
+
+
+.divider {
+	min-height: 15px;
+	background-color: #ebebeb;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.print {
+	float: right;
+	text-decoration: none;
+	color: #8c8c8c;
+	font-size: 14px;
+	margin-top: 32px;
+	display: inline;
+}
+.featimg {
+	max-width: 820px;
+	min-height: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.bodytext {
+	text-indent: 2%;
+	line-height: 150%;
+	color: #8c8c8c;
+	font-family: Droid serif;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.bgpaper {
+	background-image: url(../img/list-background.png);
+	width: 800px;
+	height: 240px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.button {
+	background-color: #cc6600;
+	min-height: 30px;
+}
+.subheaders {
+	font-family: Abel;
+	color: #8c8c8c;
+	position: relative;
+	font-size: 12px;
+}
+.slinks {
+	float: right;
+	margin-top: 15px;
+	margin-left: 2px;
+}
+.biotext {
+	line-height: 150%;
+	color: #8c8c8c;
+	font-family: Droid serif;
+	font-size: 15px;
+}
+.copyright {
+	font-family: Droid serif;
+	font-size: 12px;
+	color: #d8d8d8;
+	margin-top: 10px;
+}
+.fineprint {
+	max-width: 300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 80px;
+}
+
+#listLeft {
+	font-family: Helvetica;
+	font-size: 16px;
+	float: left;
+	position: relative;
+	top: 30px;
+}
+#listRight {
+	font-family: Helvetica;
+	font-size: 16px;
+	float: right;
+	position: relative;
+	top: 30px;
+}

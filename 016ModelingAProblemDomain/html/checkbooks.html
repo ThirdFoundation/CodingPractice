@@ -1,0 +1,270 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="../css/base.css">
+		<link type="text/css" rel="stylesheet" href="../css/layout.css">
+		<link type="text/css" rel="stylesheet" href="../css/module.css">
+		<link type="text/css" rel="stylesheet" href="../css/state.css">
+		<link type="text/css" rel="stylesheet" href='http://fonts.googleapis.com/css?family=Abel|Yellowtail|Droid+Serif:400,700'>
+	</head>
+	<body>
+		<div class="container_16">
+			<header>
+				<div class="grid_14 push_1 header">
+					<div class="grid_8 push_1 logo">Check out the Books &#10003;</div>
+					<div class="grid_1 push_1 openbooks">
+						<img src="../static/open-books.png" width="135" height="89">
+					</div>
+					<div class="grid_1 push_3 navigation">
+						<button class="pagenav" id="homelink"><a href="mainbooks.html">Home</a></button>
+						<button class="pagenav" id="checklink"><a href="checkbooks.html">Check</a></button>
+						<button class="pagenav" id="aboutlink"><a href="aboutbooks.html">About</a></button>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</header>
+			<article>
+				<div class="grid_14 push_1 main">
+					<div class="grid_12 push_1 description">
+						<h1>Check out the Books</h1>
+						<h3>TO USE OUR SIMULATOR:</h3>
+						<ul>
+							<li>Select your library's location and the length of your financial projection from the dropdowns provided.</li>
+							<li>Enter the maximum expected government contributions above the baseline, as well as the maximum expected shortfall.  "1" represents $1,000,000, ".3" represents $300,000, etc.</li>
+							<li>Enter the maximum expected private contributions above the baseline, as well as the maximum expected shortfall.</li>
+							<li>Click "Calculate" to tabulate your results.</li>
+					</div>
+					<div class="grid_12 push_1 userinput">
+						<div class="grid_2 uicaption" id="captionLocation">
+							<h4>Library location</h4>
+						</div>
+						<div class="grid_2 uicaption" id="captionYear">
+							<h4>Length of forecast</h4>
+						</div>
+						<div class="grid_2 uicaption" id="captionGovmin">
+							<h4>Gov't minimum</h4>
+						</div>
+						<div class="grid_2 uicaption" id="captionGovmax">
+							<h4>Gov't maximum</h4>
+						</div>
+						<div class="grid_2 uicaption" id="captionPrimin">
+							<h4>Private minimum</h4>
+						</div>
+						<div class="grid_2 uicaption" id="captionPrimax">
+							<h4>Private maximum</h4>
+						</div>
+						<select class="dropdown" id="branch">
+							<option id="sea" value="Seattle">Seattle</option>
+							<option id="tac" value="Tacoma">Tacoma</option>
+							<option id="bel" value="Bellevue">Bellevue</option>
+							<option id="kir" value="Kirkland">Kirkland</option>
+							<option id="put" value="Putingrad">Putingrad</option>
+						</select>
+						<select class="dropdown" id="years">
+							<option id="01" value="1">through 2016</option>
+							<option id="02" value="2">through 2017</option>
+							<option id="03" value="3">through 2018</option>
+							<option id="04" value="4">through 2019</option>
+							<option id="05" value="5">through 2020</option>
+							<option id="06" value="6">through 2021</option>
+							<option id="07" value="7">through 2022</option>
+							<option id="08" value="8">through 2023</option>
+							<option id="09" value="9">through 2024</option>
+							<option id="10" value="10">through 2025</option>
+							<option id="11" value="11">through 2026</option>
+							<option id="12" value="12">through 2027</option>
+							<option id="13" value="13">through 2028</option>
+							<option id="14" value="14">through 2029</option>
+							<option id="15" value="15">through 2030</option>
+							<option id="16" value="16">through 2031</option>
+							<option id="17" value="17">through 2032</option>
+							<option id="18" value="18">through 2033</option>
+							<option id="19" value="19">through 2034</option>
+							<option id="20" value="20">through 2035</option>
+							<option id="21" value="21">through 2036</option>
+							<option id="22" value="22">through 2037</option>
+							<option id="23" value="23">through 2038</option>
+							<option id="24" value="24">through 2039</option>
+							<option id="25" value="25">through 2040</option>
+						</select>
+						<input class="textinput" id="govMinChange" type="text" placeholder="Type 1 for $1mil">
+						<input class="textinput" id="govMaxChange" type="text" placeholder="Type 1 for $1mil">
+						<input class="textinput" id="priMinChange" type="text" placeholder="Type 1 for $1mil">
+						<input class="textinput" id="priMaxChange" type="text" placeholder="Type 1 for $1mil">
+						<button id="submit">Calculate</button>
+					</div>
+					<div class="grid_12 push_1 results">
+						<h2>CityName Library</h2>
+						<table class="data">
+						<caption><h3>Results</h3></caption>
+							<tr>
+								<th>thru Year</th>
+								<th>Projected Public Total</th>
+								<th>Projected Private Total</th>
+								<th>Summary</th>
+							</tr>
+							<tr>
+								<th>2016</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2017</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2018</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2019</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2020</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2021</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2022</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2023</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2024</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2025</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2026</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2027</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2028</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2029</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2030</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2031</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2032</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2033</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2034</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2035</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2036</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2037</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2038</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2039</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+							<tr>
+								<th>2040</th>
+								<th class="budgetOutput">-----</th>
+								<th class="donateOutput">-----</th>
+								<th class="balanceOutput">-----</th>
+							</tr>
+					</table>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</section>
+			<footer>
+				<div class="grid_14 push_1 footer">
+					<p>I am the footer.  I exist only to foot.  Foot is a verb now.</p>
+				</div>
+				<div class="clear"></div>
+			</footer>
+		<script src="../scripts/check.js"></script>
+	</body>
+</html>

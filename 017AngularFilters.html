@@ -1,0 +1,42 @@
+<!--Write a simple HTML page to practice using Angular filters.  this.dev Week 6 exercises -->
+
+<html>
+<body ng-app="myApp">
+	<div ng-controller="myController">
+		<select ng-model="criteria">
+			<option value="type">Type</option>
+			<option value="num">Number</option>
+			<option value="">Show All</option>
+		</select>
+		<ul>
+			<li ng-repeat="item in stuff | orderBy: criteria">{{item.num}} {{item.type}}</li>
+		</ul>
+		<p>At the time of pageload, the UTC-formatted date and time was: {{now}}</p>
+		<p>We can filter that time in many ways:</p>
+		<ul>
+			<li ng-repeat="X in formats">{{now | date : X : UTC-8}}</li>
+		</ul>
+		<p>My preferred format for displaying date is {{now | date:fullDate:UTC-8}}</p>
+	</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+  <script>
+  	angular.module("myApp", [])
+  		.controller("myController", MyController);
+		function MyController($scope) {
+  		$scope.stuff = [
+  			{num: 937,    type: 'bunnies'},
+  			{num: 16,     type: 'salamanders'},
+  			{num: 28,     type: 'Republicans'},
+  			{num: 4196.8, type: 'priceless historical documents'},
+  			{num: 105,    type: 'family recipes'},
+  			{num: 577,    type: 'football draft picks'},
+  			{num: 29,     type: 'rounds of Guinness'},
+  			{num: 660,    type: 'teaspoons'},
+  			{num: -893,   type: 'lugnuts'}
+  		];
+  		$scope.now = new Date().getTime();
+  		$scope.formats = ['short', 'medium', 'fullDate', 'longDate', 'mediumDate', 'shortDate', 'mediumTime', 'shortTime'];
+  	}
+  </script>
+</body>
+</html>
